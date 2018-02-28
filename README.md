@@ -1,2 +1,3 @@
 # more-from-less
-More from LESS
+### More from LESS 
+by Kyle Lin
