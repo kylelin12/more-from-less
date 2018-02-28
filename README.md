@@ -21,7 +21,7 @@ Although you need to compile your stylesheets to plain CSS beforehand, they add 
 
 Variables can be used to keep constants throughout your stylesheet.
 
-```
+```less
 @bluecolor: #00aeef;
 
 h1 {
@@ -31,7 +31,7 @@ h1 {
 
 is equivalent to
 
-```
+```css
 h1 {
     color: #00aeef;
 }
@@ -43,7 +43,7 @@ h1 {
 
 Calculations can be used for more precise values throughout your stylesheet.
 
-```
+```less
 @bluecolor: #00aeef;
 @bluecolor1: @bluecolor + #111; 
 
@@ -54,7 +54,7 @@ h1 {
 
 is equivalent to
 
-```
+```css
 h1 {
     color: #00b00;
 }
@@ -66,7 +66,7 @@ h1 {
 
 Styles from other elements can be transplanted.
 
-```
+```less
 .bluesmush {
     color: blue;
     width: 5px;
@@ -80,7 +80,7 @@ h1 {
 
 is equivalent to
 
-```
+```css
 h1 {
     font-family: Arial;
     color: blue;
@@ -94,7 +94,7 @@ h1 {
 
 Styles can be nested!
 
-```
+```less
 #bigdiv {
     width: 900px;
     .container {
@@ -111,7 +111,7 @@ Styles can be nested!
 
 is equivalent to
 
-```
+```css
 #bigdiv {
     width: 900px;
 }
@@ -135,7 +135,7 @@ is equivalent to
 
 You can bundle styles and select individual styles to apply
 
-```
+```less
 #mybundle() {
     .bluetext {
         color: blue;
@@ -161,7 +161,7 @@ You can bundle styles and select individual styles to apply
 
 is equivalent to
 
-```
+```css
 .stylishdiv {
     width: 90px;
     color: blue;
