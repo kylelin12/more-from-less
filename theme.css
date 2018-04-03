@@ -1,0 +1,30 @@
+body {
+    background-color: #c0e3f4;
+}
+
+#body {
+    text-align: center;
+}
+
+.header-huge {
+    font-size: 30px;
+    display: inline-flex;
+}
+
+.header-small {
+    font-size: 10px;
+    display: inline-flex;
+}
+
+#table > th, #table >td {
+    padding: 15px;
+}
+
+#table > td {
+    text-align: center;
+    width: 50%;
+}
+
+#table {
+    width: 100%;
+}

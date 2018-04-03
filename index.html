@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>More from LESS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/one-page-wonder.min.css" rel="stylesheet">
+
+    <link href="css/mystyle.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">More from LESS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white">
+      <div class="masthead-content">
+        <div class="container">
+          <h1 class="masthead-heading mb-0">More from LESS</h1>
+          <h2 class="masthead-subheading mb-0">The one page destination for LESS</h2>
+          <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5" id="dog-btn">Dog Image</a>
+        </div>
+      </div>
+      <div class="bg-circle-1 bg-circle"></div>
+      <div class="bg-circle-2 bg-circle"></div>
+      <div class="bg-circle-3 bg-circle"></div>
+      <div class="bg-circle-4 bg-circle"></div>
+    </header>
+
+    <div id="mydog" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="dogpic" src="http://thecatapi.com/api/images/get?format=src&type=jpg">
+        <button id="newpic" class="btn btn-primary">New Picture</button>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/less_logo.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4">What is LESS?</h2>
+              <p>Cascading Stylesheets (CSS) and web design in general aren’t considered ’programming’ by a
+                lot of people. You don’t define functions, you don’t have variables, and you’re simply styling
+                elements.</p>
+
+                <p>Vanilla CSS is pretty hard to write and keep track of. Having multiple elements maintain the
+                  same color scheme can be pretty tedious, most if not all of us have been there before. That is
+                  where CSS Pre-Processors come in.</p>
+                
+                <p>LESS (Leaner Style Sheets) is a CSS Pre-Processor that lets you write cleaner and more
+                  consistent CSS.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/Styling.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <h2 class="display-4">What it brings</h2>
+              <p>Although you need to compile your stylesheets to plain CSS beforehand, they add a variety of
+                benefits.<p>
+                <p>• Variables to keep constants throughout your stylesheet</p>
+                <p>• Calculation of values for more precision</p>
+                <p>• Nesting styles</p>
+                <p>• Importation of styles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/variables.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4">Variables</h2>
+              <p>LESS allows you to declare variables and use them in your CSS to keep consistency.</p>
+              <p>To declare a variable, Simply do</p>
+                <p class="tabbed">@variable: value.</p>
+                <p>Example:</p>
+                <p class="tabbed">@myblue: #00aeef;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/calculations.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <h2 class="display-4">Calculations</h2>
+              <p>Calculations can be used in tandem with variables to provide a consistent experience
+                throughout your page.</p>
+              <p>For example, say you want to place the element 30% + 15px from the left.</p>
+              <p>This can be done as shown in the figure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/hexcode.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4">Hexcode Calculations</h2>
+              <p>You can also use calculations to compute hexcodes!</p>
+              <p>In the figure, @newbluecolor is equivalent to #00b00.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/mixin.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <h2 class="display-4">Mixins</h2>
+              <p>A <span class="boldit">mixin</span> is the LESS equivalent of taking filling from one pie and placing it another.</p>
+              <p>You can take the best parts of one style and transplant it into another</p>
+              <p>Of course this transplants <span class="boldit">ALL</span> of the styling associated with it so be careful!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/nests.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4">Nesting</h2>
+              <p>Nesting of styles can be accomplished using LESS.</p>
+              <p>Nesting is another feature of LESS that allows you to style quickly and in an organized manner.</p>
+              <p>Nesting is useful when you have an element and need to style it along with its children.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/importing.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <h2 class="display-4">Importing</h2>
+              <p>LESS stylesheets can be separated easily with the use of importing.</p>
+              <p>If you’re familiar with C, this is similar to the inclusion of headers at the beginning of your code.</p>
+              <p>Inclusion includes variables and style definitions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/references.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4">Import references</h2>
+              <p>@import is nice and all, but using it imports the entire stylesheet.</p>
+              <p>LESS includes a way to import only what you’re using.</p>
+              <p>This can by done by:</p>
+              <p class="tabbed">@import (reference) "mypistyle.less";</p>
+              <p>This is useful in keeping filesizes small. You don’t want to import all 3.14kb of a stylesheet when
+                you’re only using one line of it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/nodejs.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <h2 class="display-4">Using LESS with node.js</h2>
+                <p><span class="boldit">node.js</span></p>
+                <p>Install less by running</p>
+                <p class="tabbed">npm install -g less;</p>
+                <p>Then you can compile your code by running lessc like so:</p>
+                <p class="tabbed">lessc styles.less styles.css</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/html.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4">Using LESS with &lt;script&gt;</h2>
+              <p>Alternatively, you can add a javascript script to your html page after including the less file.</p>
+              <p class="tabbed">&lt;link rel="stylesheet/less" type="text/css" href="mypistyle.less"/&gt;</p>
+              <p class="tabbed">&lt;script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js"&gt;&lt;/script&gt;</p>
+              <p>* You can also download it and include the local file.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+            <button class="btn btn-primary" id="topbtn">Go back to the top</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-black">
+      <div class="container">
+        <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="vendor/myjs.js"></script>
+  </body>
+
+</html>

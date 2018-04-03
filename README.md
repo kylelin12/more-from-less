@@ -1,176 +1,62 @@
-# Overview
+# [Start Bootstrap - One Page Wonder](https://startbootstrap.com/template-overviews/one-page-wonder/)
 
-**More from LESS** by Kyle Lin
+[One Page Wonder](http://startbootstrap.com/template-overviews/one-page-wonder/) is a basic one page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-Cascading Stylesheets (CSS) and web design in general aren't considered 'programming' by the vast majority of the Computer Science field. You don't define functions, you don't have variables, and you they're simply displaying elements.
+## Preview
 
-LESS (Leaner Style Sheets) lets you write cleaner and more consistent CSS.
+[![One Page Wonder Preview](https://startbootstrap.com/assets/img/templates/one-page-wonder.jpg)](https://blackrockdigital.github.io/startbootstrap-one-page-wonder/)
 
-Vanilla CSS is pretty hard to write and keep track of. Having multiple elements maintain the same color scheme can be pretty tedious, most if not all of us have been there before. That is where CSS Pre-Processors come in.
+**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-one-page-wonder/)**
 
-Although you need to compile your stylesheets to plain CSS beforehand, they add a variety of benefits.
+## Status
 
-* Variables to keep constants throughout your stylesheet
-* Calculation of values for more precision
-* Reuse styles from other elements
-* Bundling styles
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-one-page-wonder/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-one-page-wonder.svg)](https://www.npmjs.com/package/startbootstrap-one-page-wonder)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-one-page-wonder.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-one-page-wonder)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-one-page-wonder/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-one-page-wonder)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-one-page-wonder/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-one-page-wonder?type=dev)
 
----
+## Download and Installation
 
-### Variables
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/one-page-wonder/)
+* Install via npm: `npm i startbootstrap-one-page-wonder`
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-one-page-wonder.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-one-page-wonder)
 
-Variables can be used to keep constants throughout your stylesheet.
+## Usage
 
-```less
-@bluecolor: #00aeef;
+### Basic Usage
 
-h1 {
-    color: @bluecolor;
-}
-```
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
-is equivalent to
+### Advanced Usage
 
-```css
-h1 {
-    color: #00aeef;
-}
-```
+After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
----
+## Bugs and Issues
 
-### Calculations
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/one-page-wonder/).
 
-Calculations can be used for more precise values throughout your stylesheet.
+## Custom Builds
 
-```less
-@bluecolor: #00aeef;
-@bluecolor1: @bluecolor + #111; 
+You can hire Start Bootstrap to create a custom build of any template, or create something from scratch using Bootstrap. For more information, visit the **[custom design services page](https://startbootstrap.com/bootstrap-design-services/)**.
 
-h1 {
-    color: @bluecolor1;
-}
-```
+## About
 
-is equivalent to
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
-```css
-h1 {
-    color: #00b00;
-}
-```
+* https://startbootstrap.com
+* https://twitter.com/SBootstrap
 
----
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-### Mixins - Reusing styles
+* http://davidmiller.io
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
 
-Styles from other elements can be transplanted.
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-```less
-.bluesmush {
-    color: blue;
-    width: 5px;
-}
+## Copyright and License
 
-h1 {
-    font-family: Arial;
-    .bluesmush;
-}
-```
-
-is equivalent to
-
-```css
-h1 {
-    font-family: Arial;
-    color: blue;
-    width: 5px;
-}
-```
-
----
-
-### Nesting
-
-Styles can be nested!
-
-```less
-#bigdiv {
-    width: 900px;
-    .container {
-        width: 300px;
-        div {
-            width: 50px;
-            h3 {
-                color: blue;
-            }
-        }
-    }
-}
-```
-
-is equivalent to
-
-```css
-#bigdiv {
-    width: 900px;
-}
-
-#bigdiv > .container {
-    width: 300px;
-}
-
-#bigdiv > .container > div {
-    width: 50px;
-}
-
-#bigdiv > .container > div > h3 {
-    color: blue;
-}
-```
-
----
-
-### Bundling
-
-You can bundle styles and select individual styles to apply
-
-```less
-#mybundle() {
-    .bluetext {
-        color: blue;
-    }
-
-    .coolbutton {
-        display: block;
-        border: 1px solid blue;
-        background-color: red;
-        .bluetext;
-    }
-}
-
-.stylishdiv {
-    width: 90px;
-    #mybundle > .bluetext;
-}
-
-.stylishbutton {
-    #mybundle > .coolbutton;
-}
-```
-
-is equivalent to
-
-```css
-.stylishdiv {
-    width: 90px;
-    color: blue;
-}
-
-.stylishdiv {
-    display: block;
-    border: 1px solid blue;
-    background-color: red;
-    color: blue;
-}
-```
+Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/gh-pages/LICENSE) license.
